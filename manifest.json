@@ -1,0 +1,18 @@
+{
+	"name": "Extension Mansion",
+	"manifest_version": 2,
+	"version": "1.0",
+	"description": "A Chrome Extension",
+	"background": {
+			"scripts": ["badgeValue.js"]
+		},
+	"browser_action": {
+			"default_icon": "ext.png",
+			"default_popup": "tutorial.html"
+		},
+	"permissions": [ "https://*.yahooapis.com/" ],
+	"content_security_policy": "script-src 'self' https://query.yahooapis.com/; object-src 'self' https://query.yahooapis.com/; img-src http://cdn.tutorialzine.com",
+	"icons": {
+		"128": "icon_128.png"
+	}
+}
